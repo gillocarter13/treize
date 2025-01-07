@@ -1,0 +1,4 @@
+.slow-spinner .spinner-border {
+    animation-duration: 2s; /* Définit la durée de l'animation (2 secondes au lieu de 0.75s par défaut) */
+}
+@import '~bootstrap/dist/css/bootstrap.min.css';
