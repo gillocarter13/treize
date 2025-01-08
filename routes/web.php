@@ -25,7 +25,7 @@ use App\Http\Controllers\CommandePersonnaliseeController;
 Route::get('/password-reset', [PasswordResetController::class, 'showRequestForm'])->name('password.request');
 Route::post('/send-reset-password', [PasswordResetController::class, 'sendResetPassword'])->name(name: 'password.send');
 
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/connect', [LoginController::class, 'login'])->name('login.post');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
